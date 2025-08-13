@@ -334,69 +334,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-              Quick answers to common questions about our services
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
-              <div className="flex flex-col space-y-1.5 p-6">
-                <h3 className="text-2xl font-semibold leading-none tracking-tight">How long does a typical project take?</h3>
-              </div>
-              <div className="p-6 pt-0">
-                <p className="text-gray-600">
-                  Project timelines vary depending on complexity. Simple websites take 2-4 weeks, while complex CRM
-                  implementations can take 8-12 weeks. We'll provide a detailed timeline during our initial
-                  consultation.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
-              <div className="flex flex-col space-y-1.5 p-6">
-                <h3 className="text-2xl font-semibold leading-none tracking-tight">Do you provide ongoing support?</h3>
-              </div>
-              <div className="p-6 pt-0">
-                <p className="text-gray-600">
-                  Yes! We offer comprehensive support packages including maintenance, updates, and technical assistance.
-                  Our support team is available during business hours to help with any issues.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
-              <div className="flex flex-col space-y-1.5 p-6">
-                <h3 className="text-2xl font-semibold leading-none tracking-tight">What technologies do you work with?</h3>
-              </div>
-              <div className="p-6 pt-0">
-                <p className="text-gray-600">
-                  We work with modern technologies including React, Next.js, Node.js, Python, and various CRM platforms.
-                  We choose the best technology stack for each project's specific requirements.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
-              <div className="flex flex-col space-y-1.5 p-6">
-                <h3 className="text-2xl font-semibold leading-none tracking-tight">Can you work with our existing systems?</h3>
-              </div>
-              <div className="p-6 pt-0">
-                <p className="text-gray-600">
-                  We specialize in integrating new solutions with existing systems. We'll assess your current
-                  infrastructure and design solutions that work seamlessly with your existing tools.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-gray-900">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
