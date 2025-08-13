@@ -20,16 +20,10 @@ export default function Home() {
                 <a href="/about" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </a>
-                <a
-                  href="/services"
-                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <a href="/services" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Services
                 </a>
-                <a
-                  href="/contact"
-                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <a href="/contact" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Contact
                 </a>
               </div>
@@ -47,8 +41,7 @@ export default function Home() {
               <span className="block text-blue-600">for Your Business</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Leading provider of web development, CRM solutions, and digital transformation services in Hong Kong since
-              2015.
+              Leading provider of web development, CRM solutions, and digital transformation services in Hong Kong since 2015.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
