@@ -1,13 +1,8 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { useState } from 'react'
 import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare, Building } from 'lucide-react'
-import Link from "next/link"
+import Link from 'next/link'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -68,22 +63,13 @@ export default function ContactPage() {
                 <Link href="/" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link
-                  href="/about"
-                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <Link href="/about" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link
-                  href="/services"
-                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <Link href="/services" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Services
                 </Link>
-                <Link
-                  href="/contact"
-                  className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <Link href="/contact" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Contact
                 </Link>
               </div>
@@ -113,12 +99,12 @@ export default function ContactPage() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12">
             {/* Contact Form */}
             <div>
-              <Card className="shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-gray-900">Send Us a Message</CardTitle>
+              <div className="shadow-lg rounded-lg border bg-white text-gray-900">
+                <div className="flex flex-col space-y-1.5 p-6">
+                  <h3 className="text-2xl font-semibold leading-none tracking-tight text-gray-900">Send Us a Message</h3>
                   <p className="text-gray-600">Fill out the form below and we'll get back to you within 24 hours.</p>
-                </CardHeader>
-                <CardContent>
+                </div>
+                <div className="p-6 pt-0">
                   {submitStatus === "success" && (
                     <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
                       <p className="text-green-800 font-medium">Thank you! Your message has been sent successfully.</p>
@@ -251,10 +237,10 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <Button
+                    <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium inline-flex items-center justify-center"
                     >
                       {isSubmitting ? (
                         <>
@@ -267,10 +253,10 @@ export default function ContactPage() {
                           <Send className="ml-2 h-4 w-4" />
                         </>
                       )}
-                    </Button>
+                    </button>
                   </form>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </div>
 
             {/* Contact Information */}
@@ -284,74 +270,64 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-6">
-                  <Card className="hover:shadow-lg transition-shadow">
-                    <CardContent className="p-6">
-                      <div className="flex items-start">
-                        <MapPin className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
-                        <div>
-                          <h3 className="font-semibold text-gray-900 mb-1">Office Address</h3>
-                          <p className="text-gray-600">
-                            17/F, 80 Gloucester Road
-                            <br />
-                            Wan Chai, Hong Kong
-                          </p>
-                        </div>
+                  <div className="hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+                    <div className="flex items-start">
+                      <MapPin className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">Office Address</h3>
+                        <p className="text-gray-600">
+                          17/F, 80 Gloucester Road
+                          <br />
+                          Wan Chai, Hong Kong
+                        </p>
                       </div>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
 
-                  <Card className="hover:shadow-lg transition-shadow">
-                    <CardContent className="p-6">
-                      <div className="flex items-start">
-                        <Phone className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
-                        <div>
-                          <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                          <p className="text-gray-600">+852 9790 8638</p>
-                          <p className="text-sm text-gray-500 mt-1">Available during business hours</p>
-                        </div>
+                  <div className="hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+                    <div className="flex items-start">
+                      <Phone className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+                        <p className="text-gray-600">+852 9790 8638</p>
+                        <p className="text-sm text-gray-500 mt-1">Available during business hours</p>
                       </div>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
 
-                  <Card className="hover:shadow-lg transition-shadow">
-                    <CardContent className="p-6">
-                      <div className="flex items-start">
-                        <Mail className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
-                        <div>
-                          <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                          <p className="text-gray-600">info@digitalgiantglobal.com</p>
-                          <p className="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
-                        </div>
+                  <div className="hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+                    <div className="flex items-start">
+                      <Mail className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+                        <p className="text-gray-600">info@digitalgiantglobal.com</p>
+                        <p className="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
                       </div>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
 
-                  <Card className="hover:shadow-lg transition-shadow">
-                    <CardContent className="p-6">
-                      <div className="flex items-start">
-                        <Clock className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
-                        <div>
-                          <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
-                          <div className="text-gray-600">
-                            <p>Monday - Friday: 9:30 AM - 6:30 PM HKT</p>
-                            <p>Saturday & Sunday: Closed</p>
-                          </div>
+                  <div className="hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+                    <div className="flex items-start">
+                      <Clock className="h-6 w-6 text-blue-600 mt-1 mr-4 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
+                        <div className="text-gray-600">
+                          <p>Monday - Friday: 9:30 AM - 6:30 PM HKT</p>
+                          <p>Saturday & Sunday: Closed</p>
                         </div>
                       </div>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Quick Response Promise */}
-                <Card className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg mb-2">Quick Response Guarantee</h3>
-                    <p className="text-blue-100">
-                      We understand that time is crucial for your business. That's why we guarantee a response to all
-                      inquiries within 24 hours during business days.
-                    </p>
-                  </CardContent>
-                </Card>
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg border bg-white shadow-sm p-6">
+                  <h3 className="font-bold text-lg mb-2">Quick Response Guarantee</h3>
+                  <p className="text-blue-100">
+                    We understand that time is crucial for your business. That's why we guarantee a response to all
+                    inquiries within 24 hours during business days.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -369,54 +345,54 @@ export default function ContactPage() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <Card>
-              <CardHeader>
-                <CardTitle>How long does a typical project take?</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <h3 className="text-2xl font-semibold leading-none tracking-tight">How long does a typical project take?</h3>
+              </div>
+              <div className="p-6 pt-0">
                 <p className="text-gray-600">
                   Project timelines vary depending on complexity. Simple websites take 2-4 weeks, while complex CRM
                   implementations can take 8-12 weeks. We'll provide a detailed timeline during our initial
                   consultation.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Do you provide ongoing support?</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <h3 className="text-2xl font-semibold leading-none tracking-tight">Do you provide ongoing support?</h3>
+              </div>
+              <div className="p-6 pt-0">
                 <p className="text-gray-600">
                   Yes! We offer comprehensive support packages including maintenance, updates, and technical assistance.
                   Our support team is available during business hours to help with any issues.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>What technologies do you work with?</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <h3 className="text-2xl font-semibold leading-none tracking-tight">What technologies do you work with?</h3>
+              </div>
+              <div className="p-6 pt-0">
                 <p className="text-gray-600">
                   We work with modern technologies including React, Next.js, Node.js, Python, and various CRM platforms.
                   We choose the best technology stack for each project's specific requirements.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Can you work with our existing systems?</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="rounded-lg border bg-white text-gray-900 shadow-sm">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <h3 className="text-2xl font-semibold leading-none tracking-tight">Can you work with our existing systems?</h3>
+              </div>
+              <div className="p-6 pt-0">
                 <p className="text-gray-600">
                   We specialize in integrating new solutions with existing systems. We'll assess your current
                   infrastructure and design solutions that work seamlessly with your existing tools.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -428,9 +404,15 @@ export default function ContactPage() {
             <h3 className="text-2xl font-bold text-white">Digital Giant Global Limited</h3>
             <p className="mt-4 text-gray-400">Professional IT Solutions for Your Business Success</p>
             <div className="mt-8 flex justify-center space-x-6">
-              <Badge variant="secondary">Web Development</Badge>
-              <Badge variant="secondary">CRM Solutions</Badge>
-              <Badge variant="secondary">IT Consulting</Badge>
+              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-700 text-gray-300">
+                Web Development
+              </span>
+              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-700 text-gray-300">
+                CRM Solutions
+              </span>
+              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-700 text-gray-300">
+                IT Consulting
+              </span>
             </div>
             <div className="mt-8 border-t border-gray-800 pt-8">
               <p className="text-gray-400 text-sm">© 2025 Digital Giant Global Limited. All rights reserved.</p>
