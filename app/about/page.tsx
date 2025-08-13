@@ -21,13 +21,22 @@ export default function AboutPage() {
                 <Link href="/" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link href="/about" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                <Link
+                  href="/about"
+                  className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   About
                 </Link>
-                <Link href="/services" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                <Link
+                  href="/services"
+                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   Services
                 </Link>
-                <Link href="/contact" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                <Link
+                  href="/contact"
+                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   Contact
                 </Link>
               </div>
@@ -56,30 +65,36 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                Our Story
-              </h2>
+              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Story</h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                Founded in 2015, Digital Giant Global Limited has been at the forefront of digital transformation in Hong Kong. 
-                We started with a simple mission: to help businesses leverage technology to achieve their goals and stay competitive 
-                in an increasingly digital world.
+                Founded in 2015, Digital Giant Global Limited has been at the forefront of digital transformation in
+                Hong Kong. We started with a simple mission: to help businesses leverage technology to achieve their
+                goals and stay competitive in an increasingly digital world.
               </p>
               <div className="mt-8 space-y-4">
                 <div className="flex items-center">
                   <Calendar className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700"><strong>2015:</strong> Company founded in Hong Kong</span>
+                  <span className="text-gray-700">
+                    <strong>2015:</strong> Company founded in Hong Kong
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <Award className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700"><strong>2018:</strong> Expanded services to include CRM solutions</span>
+                  <span className="text-gray-700">
+                    <strong>2018:</strong> Expanded services to include CRM solutions
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <Globe className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700"><strong>2020:</strong> Launched digital transformation consulting</span>
+                  <span className="text-gray-700">
+                    <strong>2020:</strong> Launched digital transformation consulting
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700"><strong>2025:</strong> Serving 200+ satisfied clients</span>
+                  <span className="text-gray-700">
+                    <strong>2025:</strong> Serving 200+ satisfied clients
+                  </span>
                 </div>
               </div>
             </div>
@@ -87,8 +102,8 @@ export default function AboutPage() {
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-lg mb-6">
-                  To empower businesses with innovative technology solutions that drive growth, 
-                  improve efficiency, and create lasting competitive advantages.
+                  To empower businesses with innovative technology solutions that drive growth, improve efficiency, and
+                  create lasting competitive advantages.
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
@@ -111,9 +126,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Values</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-              The principles that guide everything we do
-            </p>
+            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">The principles that guide everything we do</p>
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -123,7 +136,9 @@ export default function AboutPage() {
                 <CardTitle>Excellence</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">We strive for excellence in every project, delivering solutions that exceed expectations.</p>
+                <p className="text-gray-600">
+                  We strive for excellence in every project, delivering solutions that exceed expectations.
+                </p>
               </CardContent>
             </Card>
 
@@ -133,7 +148,9 @@ export default function AboutPage() {
                 <CardTitle>Collaboration</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">We work closely with our clients as partners, ensuring their success is our success.</p>
+                <p className="text-gray-600">
+                  We work closely with our clients as partners, ensuring their success is our success.
+                </p>
               </CardContent>
             </Card>
 
