@@ -1,8 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Users, Award, Target, Globe, Calendar, MapPin, Phone, Mail, Clock } from 'lucide-react'
-import Link from "next/link"
+import Link from 'next/link'
 
 export default function AboutPage() {
   return (
@@ -21,22 +18,13 @@ export default function AboutPage() {
                 <Link href="/" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link
-                  href="/about"
-                  className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <Link href="/about" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link
-                  href="/services"
-                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <Link href="/services" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Services
                 </Link>
-                <Link
-                  href="/contact"
-                  className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <Link href="/contact" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   Contact
                 </Link>
               </div>
@@ -130,49 +118,33 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <Card className="text-center bg-gradient-to-br from-blue-50 to-indigo-100 border-0">
-              <CardHeader>
-                <Target className="h-12 w-12 text-blue-600 mx-auto" />
-                <CardTitle>Excellence</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  We strive for excellence in every project, delivering solutions that exceed expectations.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-center bg-gradient-to-br from-blue-50 to-indigo-100 border-0 rounded-lg p-6">
+              <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Excellence</h3>
+              <p className="text-gray-600">
+                We strive for excellence in every project, delivering solutions that exceed expectations.
+              </p>
+            </div>
 
-            <Card className="text-center bg-gradient-to-br from-green-50 to-emerald-100 border-0">
-              <CardHeader>
-                <Users className="h-12 w-12 text-green-600 mx-auto" />
-                <CardTitle>Collaboration</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  We work closely with our clients as partners, ensuring their success is our success.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-center bg-gradient-to-br from-green-50 to-emerald-100 border-0 rounded-lg p-6">
+              <Users className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Collaboration</h3>
+              <p className="text-gray-600">
+                We work closely with our clients as partners, ensuring their success is our success.
+              </p>
+            </div>
 
-            <Card className="text-center bg-gradient-to-br from-purple-50 to-violet-100 border-0">
-              <CardHeader>
-                <Globe className="h-12 w-12 text-purple-600 mx-auto" />
-                <CardTitle>Innovation</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">We embrace cutting-edge technologies to provide innovative solutions.</p>
-              </CardContent>
-            </Card>
+            <div className="text-center bg-gradient-to-br from-purple-50 to-violet-100 border-0 rounded-lg p-6">
+              <Globe className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Innovation</h3>
+              <p className="text-gray-600">We embrace cutting-edge technologies to provide innovative solutions.</p>
+            </div>
 
-            <Card className="text-center bg-gradient-to-br from-orange-50 to-red-100 border-0">
-              <CardHeader>
-                <Award className="h-12 w-12 text-orange-600 mx-auto" />
-                <CardTitle>Integrity</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">We conduct business with honesty, transparency, and ethical practices.</p>
-              </CardContent>
-            </Card>
+            <div className="text-center bg-gradient-to-br from-orange-50 to-red-100 border-0 rounded-lg p-6">
+              <Award className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Integrity</h3>
+              <p className="text-gray-600">We conduct business with honesty, transparency, and ethical practices.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -188,61 +160,45 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <MapPin className="h-8 w-8 text-blue-600 mx-auto" />
-                <CardTitle>Address</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  17/F, 80 Gloucester Road
-                  <br />
-                  Wan Chai, Hong Kong
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-center hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+              <MapPin className="h-8 w-8 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Address</h3>
+              <p className="text-gray-600">
+                17/F, 80 Gloucester Road
+                <br />
+                Wan Chai, Hong Kong
+              </p>
+            </div>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <Phone className="h-8 w-8 text-blue-600 mx-auto" />
-                <CardTitle>Phone</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">+852 9790 8638</p>
-              </CardContent>
-            </Card>
+            <div className="text-center hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+              <Phone className="h-8 w-8 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Phone</h3>
+              <p className="text-gray-600">+852 9790 8638</p>
+            </div>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <Mail className="h-8 w-8 text-blue-600 mx-auto" />
-                <CardTitle>Email</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">info@digitalgiantglobal.com</p>
-              </CardContent>
-            </Card>
+            <div className="text-center hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+              <Mail className="h-8 w-8 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Email</h3>
+              <p className="text-gray-600">info@digitalgiantglobal.com</p>
+            </div>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <Clock className="h-8 w-8 text-blue-600 mx-auto" />
-                <CardTitle>Business Hours</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Mon-Fri: 9:30 AM - 6:30 PM HKT
-                  <br />
-                  Sat-Sun: Closed
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-center hover:shadow-lg transition-shadow rounded-lg border bg-white text-gray-900 shadow-sm p-6">
+              <Clock className="h-8 w-8 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold leading-none tracking-tight mb-4">Business Hours</h3>
+              <p className="text-gray-600">
+                Mon-Fri: 9:30 AM - 6:30 PM HKT
+                <br />
+                Sat-Sun: Closed
+              </p>
+            </div>
           </div>
 
           <div className="text-center mt-12">
             <Link href="/contact">
-              <Button size="lg">
+              <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-blue-600 text-white hover:bg-blue-700 h-11 px-8">
                 Contact Us Today
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              </button>
             </Link>
           </div>
         </div>
@@ -255,9 +211,15 @@ export default function AboutPage() {
             <h3 className="text-2xl font-bold text-white">Digital Giant Global Limited</h3>
             <p className="mt-4 text-gray-400">Professional IT Solutions for Your Business Success</p>
             <div className="mt-8 flex justify-center space-x-6">
-              <Badge variant="secondary">Web Development</Badge>
-              <Badge variant="secondary">CRM Solutions</Badge>
-              <Badge variant="secondary">IT Consulting</Badge>
+              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-700 text-gray-300">
+                Web Development
+              </span>
+              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-700 text-gray-300">
+                CRM Solutions
+              </span>
+              <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-700 text-gray-300">
+                IT Consulting
+              </span>
             </div>
             <div className="mt-8 border-t border-gray-800 pt-8">
               <p className="text-gray-400 text-sm">© 2025 Digital Giant Global Limited. All rights reserved.</p>
