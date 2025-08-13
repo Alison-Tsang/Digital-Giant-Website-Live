@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Story</h2>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-              A decade of innovation and excellence in IT solutions
+              Years of innovation and excellence in IT solutions
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-gray-900">Founded in 2017</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                Established in Hong Kong with a vision to provide cutting-edge IT solutions to businesses across Asia-Pacific region.
+                Established in 2017 in Hong Kong with a vision to provide cutting-edge IT solutions to businesses across Asia-Pacific region.
               </p>
               <div className="space-y-2">
                 <div className="flex items-center text-sm text-gray-600">
