@@ -42,7 +42,7 @@ export default function AboutPage() {
               <span className="block text-blue-600">Digital Giant Global</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Leading Hong Kong IT solutions provider since 2015, transforming businesses through technology
+              Leading Hong Kong IT solutions provider since 2017, transforming businesses through technology
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function AboutPage() {
             <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg p-8 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-6">
                 <Building className="h-8 w-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-bold text-gray-900">Founded in 2015</h3>
+                <h3 className="text-xl font-bold text-gray-900">Founded in 2017</h3>
               </div>
               <p className="text-gray-600 mb-6">
                 Established in Hong Kong with a vision to provide cutting-edge IT solutions to businesses across Asia-Pacific region.
